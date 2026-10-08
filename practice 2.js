@@ -10,12 +10,14 @@
 //   createStudent("Sam",  10, 2.9)  → { name: "Sam",  grade: 10, gpa: 2.9, isHonors: false }
 
 function createStudent(name, grade, gpa) {
-    Students =[
-        { name: "Sam",  grade: 10, gpa: 2.9, isHonors: false }
-    ]
+    checked = false
+    if (gpa >= 3.5){
+        checked = true
+    }
+    Students = { name: name,  grade: grade, gpa: gpa, isHonors:checked }
+    return Students
 }
-
 // Test your function — uncomment when ready:
 // console.log("\n--- Problem 2 ---");
-// console.log(createStudent("Alex", 11, 3.7));
-// console.log(createStudent("Sam", 10, 2.9));
+console.log(createStudent("Alex", 11, 3.7));
+console.log(createStudent("Sam", 10, 2.9));
