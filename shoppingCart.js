@@ -24,25 +24,18 @@ shop=[
     {element:"Hydrogen", price:1.13, abbreviation:"H",  atomicNumber:1},
     {element:"Helium", price:44.00, abbreviation:"He",  atomicNumber:2},
     {element:"Nitrogen", price:0.06, abbreviation:"N",  atomicNumber:7},
-    {element:"Sodium", price:1.50, abbreviation:"Na",  atomicNumber:11},
+    {element:"Sodium", price:1.36, abbreviation:"Na",  atomicNumber:11},
     {element:"Aluminum", price:1.39, abbreviation:"Al",  atomicNumber:13},
     {element:"Silicon", price:0.77, abbreviation:"Si",  atomicNumber:14},
-    {element:"Mercury", price:2.00, abbreviation:"Hg",  atomicNumber:80},
-    {element:"Mercury", price:2.00, abbreviation:"Hg",  atomicNumber:80},
-    {element:"Mercury", price:2.00, abbreviation:"Hg",  atomicNumber:80},
-    {element:"Mercury", price:2.00, abbreviation:"Hg",  atomicNumber:80},
-    {element:"Mercury", price:2.00, abbreviation:"Hg",  atomicNumber:80},
-    {element:"Mercury", price:2.00, abbreviation:"Hg",  atomicNumber:80},
+    {element:"Titanium", price:5.17, abbreviation:"Ti",  atomicNumber:22},
+    {element:"Iron", price:0.19, abbreviation:"Fe",  atomicNumber:26},
+    {element:"Nickel", price:6.31, abbreviation:"Ni",  atomicNumber:28},
+    {element:"Silver", price:236.32, abbreviation:"Ag",  atomicNumber:47},
+    {element:"Tungsten", price:16.01, abbreviation:"W",  atomicNumber:74},
+    {element:"Gold", price:20430.96, abbreviation:"Au",  atomicNumber:79},
 
 ]
 function shoppingCart(){
 
 }
-
-
-
-7	N	Nitrogen	~$0.06
-11	Na	Sodium	~$1.36
-13	Al	Aluminum	~$1.39
-14	Si	Silicon	~$0.77
 
