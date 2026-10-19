@@ -10,7 +10,7 @@ Provide users a total for their purchase
 *Later
 All items shown and filtered on screen
 Shopping cart with add/remove buttons and total order price */
-
+cart=[]
 shop=[
     {element:"Oxygen", price:0.02, abbreviation:"O",  atomicNumber:8},
     {element:"Calcium", price:1.64, abbreviation:"Ca",  atomicNumber:20},
@@ -35,7 +35,22 @@ shop=[
     {element:"Gold", price:20430.96, abbreviation:"Au",  atomicNumber:79},
 
 ]
-function shoppingCart(){
+function shoppingEnter(){
+    shop.forEach(shop => {console.log(shop.element)});
+}
+function shoppingAdd(x){
+    shop.forEach(shop => {if (x === String(shop.element)) {cart.push(x)}})
+}
+function shoppingAdd(){
 
 }
+function shoppingTotal(){
 
+}
+function shoppingFilter(){
+
+}
+shoppingEnter()
+shoppingAdd("Gold")
+console.log(String(shop.element))
+console.log(cart)
