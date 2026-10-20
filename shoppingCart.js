@@ -10,7 +10,6 @@ Provide users a total for their purchase
 *Later
 All items shown and filtered on screen
 Shopping cart with add/remove buttons and total order price */
-cart=[]
 shop=[
     {element:"Oxygen", price:0.02, abbreviation:"O",  atomicNumber:8},
     {element:"Calcium", price:1.64, abbreviation:"Ca",  atomicNumber:20},
@@ -20,7 +19,6 @@ shop=[
     {element:"Barium", price:3.84, abbreviation:"Ba",  atomicNumber:56},
     {element:"Mercury", price:292.69, abbreviation:"Hg",  atomicNumber:80},
     {element:"Bismuth", price:24.09, abbreviation:"Bi",  atomicNumber:83},
-
     {element:"Hydrogen", price:1.13, abbreviation:"H",  atomicNumber:1},
     {element:"Helium", price:44.00, abbreviation:"He",  atomicNumber:2},
     {element:"Nitrogen", price:0.06, abbreviation:"N",  atomicNumber:7},
@@ -33,16 +31,18 @@ shop=[
     {element:"Silver", price:236.32, abbreviation:"Ag",  atomicNumber:47},
     {element:"Tungsten", price:16.01, abbreviation:"W",  atomicNumber:74},
     {element:"Gold", price:20430.96, abbreviation:"Au",  atomicNumber:79},
-
 ]
+cart=[]
+
 function shoppingEnter(){
     shop.forEach(shop => {console.log(shop.element)});
 }
 function shoppingAdd(x){
-    shop.forEach(shop => {if (x === String(shop.element)) {cart.push(x)}})
-}
-function shoppingAdd(){
-
+    shop.forEach(function(shop){
+        if(x===shop.element){
+            cart.push(x) 
+        }
+    })
 }
 function shoppingTotal(){
 
@@ -50,7 +50,5 @@ function shoppingTotal(){
 function shoppingFilter(){
 
 }
-shoppingEnter()
-shoppingAdd("Gold")
-console.log(String(shop.element))
+shoppingAdd('Gold');
 console.log(cart)
