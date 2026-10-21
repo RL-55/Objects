@@ -33,22 +33,45 @@ shop=[
     {element:"Gold", price:20430.96, abbreviation:"Au",  atomicNumber:79},
 ]
 cart=[]
-
+cost=0
+cartfiller=[]
 function shoppingEnter(){
     shop.forEach(shop => {console.log(shop.element)});
 }
-function shoppingAdd(x){
+function shoppingAdd(z){
     shop.forEach(function(shop){
-        if(x===shop.element){
-            cart.push(x) 
+        if(z===shop.element){
+            cart.push(z) 
+            cost += shop.price
         }
     })
 }
+function shoppingRemove(y){
+    cart.forEach(function(cart){
+        if(y===cart){
+            shop.forEach(function(shop){
+                if(y===shop.element){
+                    cost -= shop.price
+                }
+            })
+        }else{
+            cartfiller.push(cart) 
+        }
+    })
+    cart = []
+    cartfiller.forEach(cartfiller => {cart.push(cartfiller)});
+}
 function shoppingTotal(){
-
+    cart.forEach(cart => {console.log(cart)});
+    console.log(cost)
 }
 function shoppingFilter(){
 
 }
 shoppingAdd('Gold');
+shoppingAdd('Gold');
+shoppingAdd('Helium');
+shoppingRemove('Helium');
+
 console.log(cart)
+shoppingTotal()
